@@ -1,0 +1,15 @@
+/*
+* @Author: Lizh
+* @Date:   2018-04-07 03:44:01
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-04-09 11:52:47
+*/
+body{
+	height:500px;
+	width:1000px;
+    background: #ccc url(../../image/s.jpg) no-repeat fixed top;   
+}
+h1{
+	color:red;
+    font-size:55px;
+}
