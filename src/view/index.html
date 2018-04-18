@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <%= require('html-loader!./common/html-head.html')  %> -->
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<div><h1>Holle lizhenhua</h1></div>
-	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
-</body>
+	<head>
+	<%= require('html-loader!./layout/html-common.html') %>
+<title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav.html') %>
+		<%= require('html-loader!./layout/header.html') %>
+		<div class="page-wrap w">
+			<%= require('html-loader!./layout/nav-side.html') %>
+			<div class="content with-nav">text</div>
+		</div>
+	<%= require('html-loader!./layout/footer.html') %>
+	</body>
 </html>

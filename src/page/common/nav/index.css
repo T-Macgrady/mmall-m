@@ -1,0 +1,29 @@
+/*
+* @Author: Lizh
+* @Date:   2018-04-17 11:58:11
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-04-17 14:08:44
+*/
+.nav{
+	height: 30px;
+	line-height: 30px;
+	background: #eee;
+}
+/*用户部分*/
+.nav .user{
+	float: left;
+}
+.nav .user.login{
+	display: none;
+}
+.nav .user .link{
+	margin-left: 5px;
+}
+/*导航链接部分*/
+.nav .nav-list{
+	float: right;
+}
+.nav .nav-list .nav-item{
+	display: inline-block;
+	margin-left: 5px;
+}

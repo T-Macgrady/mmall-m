@@ -1,0 +1,25 @@
+/*
+* @Author: Lizh
+* @Date:   2018-04-17 23:04:23
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-04-18 03:48:13
+*/
+.nav-side{
+	float: left;
+	width: 130px;
+	min-height: 100px;
+}
+.nav-side .nav-item{
+	line-height: 25px;
+	font-size: 13px;
+}
+.nav-side .nav-item .link{
+	color: #888;
+}
+.nav-side .nav-item.active .link{
+	color: #c60023;
+}
+.content.with-nav{
+	float: left;
+	width: 950px;
+}

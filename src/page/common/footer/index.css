@@ -1,0 +1,24 @@
+/*
+* @Author: Lizh
+* @Date:   2018-04-17 15:53:25
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-04-18 02:10:25
+*/
+.footer{
+	padding-bottom: 10px;
+}
+.footer .links{
+	text-align: center;
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+}
+.footer .links .link{
+	padding: 0 10px;
+}
+.footer .copyright{
+	text-align: center;
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+}

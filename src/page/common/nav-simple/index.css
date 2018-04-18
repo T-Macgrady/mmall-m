@@ -1,0 +1,17 @@
+/*
+* @Author: Lizh
+* @Date:   2018-04-16 21:49:18
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-04-17 11:54:38
+*/
+.nav-simple{
+	height: 60px;
+	line-height: 60px;
+	background: #fff;
+	border-bottom: 1px solid #ddd; 
+}
+.nav-simple .logo{
+	color: #c60023;
+	font-size: 26px;
+	font-weight: bold;
+}
