@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-17 11:57:49
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-18 17:14:51
+* @Last Modified time: 2018-04-26 15:07:15
 */
 require('./index.css');
 var _mm     = require('util/mm.js');
@@ -11,10 +11,10 @@ var _cart   = require('service/cart-service.js');
 // 导航
 var nav = {
     init : function(){
-        this.bindEvent();
         this.loadUserInfo();
         this.loadCartCount();
-        return this;
+        this.bindEvent();       
+        // return this;
     },
     bindEvent : function(){
         // 登录点击事件
@@ -37,10 +37,9 @@ var nav = {
     // 加载用户信息
     loadUserInfo : function(){
         _user.checkLogin(function(res){
-            $('.user.not-login').hide().siblings('.user.login').show()
-                .find('.username').text(res.username);
+            $('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.username);
         }, function(errMsg){
-            // do nothing
+            console.log('checkLogin:'+errMsg);
         });
     },
     // 加载购物车数量
@@ -49,6 +48,7 @@ var nav = {
             $('.nav .cart-count').text(res || 0);
         }, function(errMsg){
             $('.nav .cart-count').text(0);
+            console.log('getCartCount:'+errMsg);
         });
     }
 };

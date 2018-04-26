@@ -1,0 +1,84 @@
+/*
+* @Author: Lizh
+* @Date:   2018-04-07 17:31:52
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-04-24 22:12:35
+*/
+.user-wrap{
+	background: #e72955;
+}
+.user-con{
+	width: 400px;
+	background:#FFFFFF;
+	margin: 40px auto;
+	position: relative;
+}
+.user-con .user-title{
+	text-align: center;
+    padding: 10px 0;
+	color: #666D74;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #DDDDDD;
+}
+.user-con .user-box{
+	padding: 20px;
+}
+.user-con .user-box .err-item{
+    padding: 4px 0 4px 50px;
+	border: 1px solid red;
+	margin-bottom: 10px;
+	color: red;
+	position: relative;
+	background-color: #fde9e9; 
+	display: none;
+}
+.user-con .user-box .err-icon{
+	position: absolute;
+	font-size: 14px;
+	left: 14px;
+	top: 50%;
+	margin-top: -7px;
+}
+.user-con .user-item{
+	margin-bottom: 20px;
+    position: relative;
+}
+.user-con .user-item .user-label{
+	position: absolute;
+	left: 1px;
+    top: 1px;
+    width: 40px;
+    bottom: 1px;
+    line-height: 36px;
+	background: #F3F3F3;
+	border-right:1px solid #BDBDBD;
+	color: #D3D3D3;
+	font-size: 18px;
+	text-align: center;
+
+}
+.user-con .user-item .user-content{
+	height: 40px;
+	width: 308px;
+	line-height: 40px;
+	display: inline;
+	padding-left: 50px;
+	outline: none;
+	font-size: 15px;
+	border: 1px solid #bdbdbd;	
+	}
+.user-con .user-btn{
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	padding: 2px 0;
+	}
+.user-con .link-item .link{
+	padding-left: 5px;
+	color: #666;
+}
+.user-con .link-item {
+	text-align: right;
+}

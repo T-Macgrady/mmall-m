@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-17 16:44:24
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-17 20:40:44
+* @Last Modified time: 2018-04-25 22:58:52
 */
 .header .logo{
 	position: absolute;
@@ -12,6 +12,7 @@
 	font-size: 36px;
 	font-weight: bold;
 	color: #c60023;
+	text-decoration: none;
 }
 .header .search-con{
 	padding: 40px 0px 30px 250px;

@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-16 21:49:18
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-17 11:54:38
+* @Last Modified time: 2018-04-25 23:00:25
 */
 .nav-simple{
 	height: 60px;
@@ -14,4 +14,5 @@
 	color: #c60023;
 	font-size: 26px;
 	font-weight: bold;
+	text-decoration: none;
 }

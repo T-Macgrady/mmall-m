@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-06 23:59:09
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-18 15:40:15
+* @Last Modified time: 2018-04-26 01:48:00
 */
 // 环境变量配置，dev / online
     var WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev';
@@ -23,17 +23,22 @@
             minify:{  //压缩HTML文件
             removeComments:true //移除HTML中的注释
        }
-    }
-}    
+    };
+};    
     console.log(WEBPACK_ENV);
     module.exports= {
     //入口文件的配置项  ./不能去掉
     entry:{
         //common:['./src/page/common/index.js','webpack-dev-server/client?http://192.168.1.104:1717/dist/'],
-        common:['./src/page/common/index.js'],
-        index:['./src/page/index/index.js']  ,
-        login:['./src/page/login/index.js'] ,
-        result:['./src/page/result/index.js'] ,
+        'common':['./src/page/common/index.js'],
+        'index':['./src/page/index/index.js']  ,
+        'user-login':['./src/page/user-login/index.js'] ,
+        'user-register':['./src/page/user-register/index.js'] ,
+        'user-pass-reset':['./src/page/user-pass-reset/index.js'] ,
+        'user-center':['./src/page/user-center/index.js'] ,
+        'user-info-update':['./src/page/user-info-update/index.js'] ,
+        'user-pass-update':['./src/page/user-pass-update/index.js'] ,
+        'result':['./src/page/result/index.js'] ,
     },
     //出口文件的配置项
     output:{
@@ -63,13 +68,14 @@
         use: [{
             loader :'url-loader?limit=8&name=resource/[hash:4096].[name].[ext]'
         }]
-    }/*,
+    },
+    /*,
     {
       test: /\.html$/,
       use: "raw-loader" // loaders: ['raw-loader'] is also perfectly acceptable.
     
   }*/
-  ,
+  
     { test: /\.string$/, use: 'html-loader'}
 
     /*,{
@@ -108,7 +114,12 @@
         }),       
         new extractTextPlugin("css/[name].css"),
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center','用户中心')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-info-update','修改个人信息')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
     ]
-}
+};

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<%= require('html-loader!./layout/html-common.html') %>
+<title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav-simple.html') %>
+		<div class="user-wrap">
+			<div class="w">
+				<div class="user-con">
+					<div class="user-title">用户登录
+					</div>
+					<div class="user-box">
+						<div class="err-item">
+							<i class="fa fa-minus-circle err-icon" ></i>
+							<p class="err-msg">error</p>
+						</div>
+						<div class="user-item">
+							<label class="user-label" for="username"><i class="fa fa-user" ></i></label>
+							<input type="text" class="user-content" id="username" placeholder="请输入用户名" autocomplete="off">
+						</div>
+						<div class="user-item">
+							<label class="user-label" for="password"><i class="fa fa-lock" ></i></label>
+							<input type="password" class="user-content" id="password" placeholder="请输入密码" autocomplete="off">
+						</div>
+						<a class="user-btn btn" id="submit">登录</a>
+						<div class="link-item">
+							<a href="./user-pass-reset.html" class="link user-pass-forget" target="_blank" >忘记密码</a>
+							<a href=./user-register.html class="link register" target="_blank">免费注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<%= require('html-loader!./layout/footer.html') %>
+	</body>
+</html>

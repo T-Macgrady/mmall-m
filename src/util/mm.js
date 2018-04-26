@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-09 13:09:41
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-18 16:47:22
+* @Last Modified time: 2018-04-24 14:22:35
 */
 
 var config = {
@@ -14,27 +14,32 @@ var _mm = {
     request : function(param){
         var _this = this;
         $.ajax({
-            type     :param.method  || 'get',
+
+            type     : param.method || 'get',
             url      : param.url    || '',
             dataType : param.type   || 'json',
             data     : param.data   || '',
             success  : function(res){
                 //登陆成功
                 if( 0 === res.status){
+                    console.log('_mm'+JSON.stringify(res));
                     typeof param.success === 'function' && param.success(res.data , res.msg );
                 }
                 //无登陆状态需请求登陆
                 else if (10 === res.status){
+                    console.log('_mm'+JSON.stringify(res));               
                     _this.doLogin();
                 }
                 // 请求数据错误
                 else if (1 === res.status) {
+                    console.log('_mm'+JSON.stringify(res));
                     typeof param.error === 'function' && param.error( res.msg );
                 } 
             },
             error    : function(err){
+                    console.log('_mm'+JSON.stringify(err));
                     typeof param.error === 'function' && param.error( err.statusText );
-            }
+                }
         });
     },
     // 获取服务器地址
@@ -62,24 +67,24 @@ var _mm = {
         alert(msg || '哪里不对了~');
     },
     //字段的验证，支持非空、手机、邮箱的判断
-    validate : function(){
-        var value = $.trim(value);
+    validate : function(value, type){
+        var _value = $.trim(value);
         //非空验证
         if('require' === type){
-            return !!value;
+            return !!_value;
         }
         //手机号验证
         if('phone' === type){
-            return /^1\d{10}$/.test(value);
+            return /^1\d{10}$/.test(_value);
         }
         //邮箱格式验证
         if('email' === type){
-            return /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(value);
+            return /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(_value);
         }
     },
     // 统一请求处理
     doLogin :function() {
-        window.location.href = './login.html?redirect=' + encodeURIConponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     //go home
     goHome : function(){
