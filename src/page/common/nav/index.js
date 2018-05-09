@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-17 11:57:49
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-26 15:07:15
+* @Last Modified time: 2018-05-09 19:20:08
 */
 require('./index.css');
 var _mm     = require('util/mm.js');
@@ -14,7 +14,7 @@ var nav = {
         this.loadUserInfo();
         this.loadCartCount();
         this.bindEvent();       
-        // return this;
+        return this;
     },
     bindEvent : function(){
         // 登录点击事件

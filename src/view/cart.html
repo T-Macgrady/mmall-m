@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<%= require('html-loader!./layout/html-common.html') %>
+<title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+	<meta charset="utf-8">
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav.html') %>
+		<%= require('html-loader!./layout/header.html') %>
+		<div class="crumb">
+			<div class="crumb-icon w">
+				<a href="./index.html" class="crumb-item">MMall</a>
+				<span> > </span>
+				<span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+			</div>
+		</div>
+		<div class="cart-wrap w">
+			<div class="cart-header">
+                <table class="cart-table">
+                    <tr>
+                        <th class="cart-header-item">
+                            <label class="car-label">
+                                <input type="checkbox" class="cart-allCheck">
+                            <span>全选</span>
+                            </label>
+                        </th>
+                        <th class="cart-header-item">
+                            <span>商品信息</span>
+                        </th>
+                        <th class="cart-header-item">
+                            <span>单价</span>
+                        </th>
+                        <th class="cart-header-item">
+                            <span>单价</span>
+                        </th>
+                        <th class="cart-header-item">
+                            <span>单价</span>
+                        </th>
+                        <th class="cart-header-item ">
+                            <span>单价</span>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart-info">
+                <table class="cart-table">
+                    <tr>
+                        <td class="cart-info-item">
+                            <input type="checkbox" class="cart-singleCheck">
+                        </td>
+                        <td class="cart-info-item">
+                            <div class="cart-img-con">
+                                <img src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="sdf" class="cart-img" >
+                            </div>
+                        </td>
+                        <td class="cart-info-item">
+                            <a href="./detail.html?productId=" target="_blank" class="link">
+                                【测试学习使用】Apple iPhone 7 Plus (A1661) 128G手机
+                            </a>
+                        </td>
+                        <td class="cart-info-item">
+                            <span class="unitPrice">￥6997</span>
+                        </td>
+                        <td class="cart-info-item">
+                            <span class="count-change-btn cart-minus">
+                            -</span>
+                            <input type="text" class="cart-count" value="661">
+                            <span class="count-change-btn cart-plus">
+                            +</span>
+                        </td>
+                        <td class="cart-info-item">
+                            <span class="totalPrices">￥6997</span>
+                        </td>
+                        <td class="cart-info-item delect"><span class="link-text">删除选中</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart-footer">
+                <table class="cart-table">
+                    <tr >
+                        <td class="cart-footer-item">
+                            <label class="cart-label">
+                                <input type="checkbox" class="cart-allCheck">
+                            <span>全选</span>
+                            </label>
+                        </td>
+                        <td class="cart-footer-item">
+                            <i class="fa fa-trash-o"></i>
+                            <span class="link-text">删除选中</span>
+                        </td>
+                        <td class="cart-footer-item">
+                            <span class="cart-total">总价：</span>
+                            <span class="cart-footer-price"> ￥0</span>
+                            <span class="btn">去结算</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	<%= require('html-loader!./layout/footer.html') %>
+	</body>
+</html>

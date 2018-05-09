@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-17 16:44:10
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-18 13:10:03
+* @Last Modified time: 2018-05-07 00:31:42
 */
 require('./index.css');
 var _mm = require ('util/mm.js');
@@ -23,10 +23,11 @@ var header = {
 		$('#search-btn').click(function(){
 			_this.searchSubmit();
 		});
-		$('#search-input').keyup(function(e){
-			if(e.keycode === 13){
+		$('#search-input').keyup(function(event){
+			event = event || window.event;
+			if(event.keyCode === 13){
 			 	_this.searchSubmit();	
-			};
+			}
 		});
 	},
 	searchSubmit : function(){
