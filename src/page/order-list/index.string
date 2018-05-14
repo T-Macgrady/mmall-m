@@ -1,0 +1,45 @@
+<div class="list-con">
+	<table class="list-header">
+		<tr>
+			<th class="cell-img">&nbsp;</th>
+			<th class="cell-name">商品信息	</th>
+			<th class="cell-unitPrice">单价</th>
+			<th class="cell-quantity">数量</th>
+			<th class="cell-totolPrice">合计</th>
+		</tr>
+	</table>
+      {{#list}}
+	<table class="list-info">
+		<tr class="list-order">
+			<td colspan="6">
+				订单号：
+				<span class="order-num link"> {{orderNo}}</span>
+						<span class="order-time">{{createTime}}</span>
+						收件人：
+						<span class="order-name">{{receiverName}}</span>
+						订单状态：
+						<span class="order-state">{{statusDesc}}</span>
+						订单总价： 
+						<span class="order-orderPrice">￥{{payment}}</span>
+						<span class="order-toDetail link">查看详情></span>
+			</td>
+		</tr>
+            {{#orderItemVoList}}
+		<tr class="list-p">
+			<td class="cell-img">
+				<a href="./order-detail?orderNo={{orderNo}}" target="_blank">
+							<img src="{{imageHost}}{{productImage}}" alt="{{productName}}" class="p-img">
+				</a>
+			</td>
+			<td >
+				<a href="./order-detail?orderNo=" target="_blank" class="cell-name link">{{productName}}</a>
+			</td>
+			<td class="cell-unitPrice link-text">￥{{currentUnitPrice}}</td>
+			<td class="cell-quantity link-text">{{quantity}}</td>
+			<td class="cell-totolPrice link-text">￥{{totalPrice}}</td>
+		</tr>
+            {{/orderItemVoList}}
+	</table>
+      {{/list}}   
+</div>
+                

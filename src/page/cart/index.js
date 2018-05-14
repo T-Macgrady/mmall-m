@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-05-02 14:14:57
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-09 19:39:46
+* @Last Modified time: 2018-05-11 11:00:52
 */
 require('./index.css');
 require('page/common/header/index.js');
@@ -124,9 +124,9 @@ var page = {
         });
         // 提交购物车
         $(document).on('click', '.cart-footer-item .btn', function(){
-            // 总价大于0，进行提交
+            // 总价大于0， 进行提交
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             }else{
                 _mm.errorTips('请选择商品后再提交');
             }

@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-12 21:36:26
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-07 15:21:59
+* @Last Modified time: 2018-05-14 01:35:39
 */
 /* css reset */
 *{
@@ -40,8 +40,6 @@ input[type='checkbox']{
 }
 /* panel */
 .panel{
-    padding: 10px;
-    margin-bottom: 10px;
     background: #fff;
 }
 .panel .panel-title{
@@ -50,6 +48,7 @@ input[type='checkbox']{
     color: #666;
     font-weight: bold;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 .panel .panel-body{
     padding: 10px;
@@ -94,6 +93,7 @@ input[type='checkbox']{
 	font-size: 12px;
 	padding: 0 10px;
 }
+/*+-按钮*/
 .count-change-btn{
     display: block;
     border: 1px solid #aaa;

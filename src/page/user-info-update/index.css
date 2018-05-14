@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-07 03:44:01
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-26 15:41:38
+* @Last Modified time: 2018-05-13 15:56:01
 */
 .form-line{
     height: 30px;
@@ -24,4 +24,7 @@
     text-align: center;
     margin: 5px 63px;
     width: 165px;
+}
+.input:focus{
+    outline: none;
 }

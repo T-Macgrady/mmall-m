@@ -1,0 +1,72 @@
+<div class="panel">
+    <div class="panel-title">订单信息</div>
+    <div class="panel-body orderDetaiWrap">
+		<div class="order-info">
+		    <div class="form-line">
+		        <span class="label">订单号：</span>
+		        <span class="text orderNo">{{orderNo}}</span>
+		    </div>
+		    <div class="form-line">
+		        <span class="label">创建时间：</span>
+		        <span class="text">{{createTime}}</span>
+		    </div>
+		    <div class="form-line">
+		        <span class="label">收件人：</span>
+		        <span class="text">{{receiverName}} {{receiverProvince}} {{receiverCity}} {{receiverAddress}} {{receiverMobile}} </span>
+		    </div>
+		    <div class="form-line">
+		        <span class="label">订单状态：</span>
+		        <span class="text">{{statusDesc}}</span>
+		    </div>
+		    <div class="form-line">
+		        <span class="label">支付方式：</span>
+		        <span class="text">{{paymentTypeDesc}}</span>
+		    </div >
+		    <div class="form-line">
+		    	{{#needPay}}
+		        <a href="./payment.html?orderNo={{orderNo}}" class="goPayment btn">去支付</a>
+		    	{{/needPay}}
+		    	{{#isCancelable}}
+		        <a class="order-cancel btn">取消订单</a>
+		    	{{/isCancelable}}
+		    </div >
+		</div>
+ 	</div>
+</div>
+<div class="panel">
+    <div class="panel-title">商品清单</div>
+	<div class="panel-body productListWrap">
+		<div class="list-con">
+			<table class="list-header">
+				<tr>
+					<th class="cell-img">&nbsp;</th>
+					<th class="cell-name">商品信息	</th>
+					<th class="cell-unitPrice">单价</th>
+					<th class="cell-quantity">数量</th>
+					<th class="cell-totolPrice">合计</th>
+				</tr>
+			</table>
+			<table class="list-info">
+	            {{#orderItemVoList}}
+				<tr class="list-p">
+					<td class="cell-img">
+						<a href="./detail.htm;?productId={{productId}}" target="_blank">
+							<img src="{{imageHost}}{{productImage}}" alt="{{productName}}" class="p-img">
+						</a>
+					</td>
+					<td >
+						<a href="./detail.html?productId={{productId}}" target="_blank" class="cell-name link">{{productName}}</a>
+					</td>
+					<td class="cell-unitPrice link-text">￥{{currentUnitPrice}}</td>
+					<td class="cell-quantity link-text">{{quantity}}</td>
+					<td class="cell-totolPrice link-text">￥{{totalPrice}}</td>
+				</tr>
+		        {{/orderItemVoList}}
+				<tr>
+					<td class="cell-orderPrice" colspan="5">订单总价： <span class="orderPrice">￥{{payment}}</span></td>
+				</tr>
+			</table>
+		</div>
+    </div>
+</div>
+                

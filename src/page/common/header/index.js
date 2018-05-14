@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-17 16:44:10
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-07 00:31:42
+* @Last Modified time: 2018-05-11 23:33:34
 */
 require('./index.css');
 var _mm = require ('util/mm.js');
@@ -16,7 +16,7 @@ var header = {
 		var keyword = _mm.getUrlParam('keyword');
 		if (keyword) {
 			$('#search-input').val(keyword);
-		};
+		}
 	},
 	bindEvent : function(){
 		var _this = this;
@@ -37,7 +37,7 @@ var header = {
 		}
 		else {
 			_mm.goHome();
-		};
+		}
 	}
 };
 header.init();

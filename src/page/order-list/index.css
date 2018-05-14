@@ -1,0 +1,80 @@
+/*
+* @Author: Lizh
+* @Date:   2018-05-13 16:00:30
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-05-13 23:28:33
+*/
+/*订单列表头部*/
+.list-header{
+	width: 100%;
+	background: #eee;
+}
+.list-header th{
+	padding: 10px 0;
+	color: #666;
+}
+/*列表*/
+.cell-img{
+	width: 10%;
+	text-align: center;
+}
+.cell-name{
+	width: 45%;
+	text-align: left;
+}
+.cell-unitPrice{
+	width: 15%;
+	text-align: center;
+}
+.cell-quantity{
+	width: 15%;
+	text-align: center;
+}
+.cell-totolPrice{
+	width: 15%;
+	text-align: center;
+}
+.list-info{
+	margin: 20px 0;
+	color: #999;
+}
+/*订单区域*/
+.list-order{
+	background: #eee;
+}
+.order-num{
+	font-weight: 700;
+}
+.list-order td{
+	overflow: hidden;
+	width: 100%;
+	padding: 10px;
+}
+.list-order span{
+	margin-right: 25px;
+	color: #999;
+}
+span.order-orderPrice{
+	color: #c60023;
+	font-weight: bold;
+}
+span.order-toDetail{
+	margin-right: 0;
+	color: #999;
+	float: right;
+	font-weight: 700;
+}
+/*产品区域*/
+.list-p td{
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color: #666;
+}
+.p-img{
+	width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+td.cell-name{
+	color: #999;
+}

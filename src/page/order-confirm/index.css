@@ -1,0 +1,182 @@
+
+* @Author: Lizh
+* @Date:   2018-05-11 14:15:13
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-05-12 16:17:15
+*/
+/* 地址模块 */
+.address-list{
+    overflow: hidden;
+}
+.address-item,
+.address-new{
+    float: left;
+    margin: 20px 20px 0  0;
+    padding: 5px 8px 2px 8px;
+    width: 200px;
+    height: 80px;
+    border: 3px dashed #ccc; 
+    cursor: pointer;
+}
+.address-item:hover,
+.address-new.hover{
+    background: #eee;
+}
+.address-item.active{
+    border: 3px dashed #c60023; 
+}
+.address-title{
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ccc;
+    color: #666;   
+}
+.address-detail{
+    margin-top: 5px;
+    height: 36px;
+    overflow: hidden;
+    color: #666;   
+}
+.address-opera{
+    text-align: right;
+}
+.address-opera span{
+    visibility: hidden;
+}
+.address-item:hover span{
+    visibility: visible;
+}
+.address-new.add{
+    text-align: center;
+}
+.fa-plus{
+    padding-top: 5px;
+    font-size: 50px;
+    color: #ccc;
+    margin: auto;
+}
+.address-item .text{
+    color: #ccc;
+}
+/* 订单产品列表 */
+.cell-imag{
+
+    width: 10%;
+    text-align: center;
+}
+.cell-imag .p-imag{
+    width: 80px;
+    height: 80px;
+}
+.cell-text{
+    width: 30%;
+    text-align: left;
+}
+.cell-unitPrice{
+    width: 20%;
+    text-align: center;
+}
+.cell-quantity{
+    width: 20%;
+    text-align: center;
+}
+.cell-totalPrice{
+    width: 20%;
+    text-align: center;
+}
+.order-product.panel-body{
+    padding-top: 0;
+}
+.product-table{
+    border-collapse: collapse;
+    padding-bottom: 10px;
+}
+.product-table th{
+    border-bottom: 1px solid #ddd;
+    height: 35px;
+    line-height: 35px;
+}
+.product-table td{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.panel-footer{
+    background: #eee;
+    text-align: right;
+}
+.panel-footer span{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.orderPrice{
+    color: #c60023;
+    font-size: 19px;
+    font-weight:bold;
+}
+/* model模块 */
+.model{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #eee;
+    background: rgb(0,0,0,.4);
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.model-con{
+    width: 700px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 5px;
+}
+.model-header{
+    padding: 15px 10px;
+    border-bottom : 1px solid #ccc;
+    position: relative;
+}
+.fa-close{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    width:  20px;
+    text-align: center;
+    position: absolute;
+    top: 17px;
+    right :17px;
+    cursor: pointer;
+}
+.model-body{
+    padding: 20px;
+}
+.model-item{
+    margin-bottom: 5px;
+
+}
+.model-item .model-lable{
+    cursor: pointer;
+}
+.model-item span{
+    color: #c60023;
+}
+.model-lable{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+.model-item input,.model-item select{
+    padding: 8px;
+    outline: none;
+    margin-right: 10px;
+}
+.model-item select{
+    width: 87px;
+    overflow: hidden;
+}
+.model-btn{
+    margin-left: 84px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}

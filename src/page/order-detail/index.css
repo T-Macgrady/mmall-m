@@ -1,0 +1,87 @@
+/*
+* @Author: Lizh
+* @Date:   2018-05-14 00:22:18
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-05-14 02:44:52
+*/
+.panel{
+	margin-bottom: 10px;
+}
+/*订单详情*/
+.form-line{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.form-line .label{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+.form-line .btn{
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	padding: 0 10px;
+	margin-left: 20px;
+	text-align: center;
+	width: 65px;
+}
+/*订单列表头部*/
+.list-header{
+	width: 100%;
+	background: #eee;
+}
+.list-header th{
+	padding: 10px 0;
+	color: #666;
+}
+/*列表*/
+.cell-img{
+	width: 10%;
+	text-align: center;
+}
+.cell-name{
+	width: 45%;
+	text-align: left;
+}
+.cell-unitPrice{
+	width: 15%;
+	text-align: center;
+}
+.cell-quantity{
+	width: 15%;
+	text-align: center;
+}
+.cell-totolPrice{
+	width: 15%;
+	text-align: center;
+}
+.list-info{
+	margin: 20px 0;
+	color: #999;
+}
+/*产品区域*/
+.list-p td{
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color: #666;
+}
+.p-img{
+	width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+td.cell-name{
+	color: #999;
+}
+.cell-orderPrice{
+	padding: 20px 20px 0 0;
+	text-align: right;
+	font-size: 14px;
+	color: #000;
+}
+.orderPrice {
+    font-weight: 700;
+    color: #c60023;
+}

@@ -3,7 +3,6 @@
 	<head>
 	<%= require('html-loader!./layout/html-common.html') %>
 <title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
-	<meta charset="utf-8">
 	</head>
 	<body>
 		<%= require('html-loader!./layout/nav.html') %>
@@ -15,9 +14,20 @@
 				<span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
 			</div>
 		</div>
-		<div class="cart-wrap w">
-
-        </div>
+		<div class="page-wrap w">
+			<%= require('html-loader!./layout/nav-side.html') %>
+			<div class="content with-nav">
+				<div class="panel">
+                    <div class="panel-title"><%= htmlWebpackPlugin.options.title%></div>
+                    <div class="panel-body orderListWrap">
+						<div class="loading"></div>
+                    </div>
+					<div class="pagination">
+					<!-- 分页 容器 -->	
+					</div>
+				</div>
+			</div>
+		</div>
 	<%= require('html-loader!./layout/footer.html') %>
 	</body>
 </html>
