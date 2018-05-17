@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-12 21:36:26
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-14 01:35:39
+* @Last Modified time: 2018-05-16 01:16:21
 */
 /* css reset */
 *{
@@ -127,7 +127,6 @@ input[type='checkbox']{
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    background: #eee;
 }
 /*面包屑*/
 .crumb{

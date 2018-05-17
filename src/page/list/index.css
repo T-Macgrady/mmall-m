@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-05-02 14:15:13
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-03 00:10:42
+* @Last Modified time: 2018-05-15 17:11:41
 */
 /*排序按钮*/
 .sort-con{
@@ -78,13 +78,3 @@
     color: #666;
     text-decoration: none;
 } 
-/* 错误信息 */
-.err-tip{
-    height: 60px;
-    line-height: 60px;
-    color: #999;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    background: #eee;
-}

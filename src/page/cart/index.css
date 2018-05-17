@@ -2,11 +2,12 @@
 * @Author: Lizh
 * @Date:   2018-05-02 14:15:13
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-09 19:39:34
+* @Last Modified time: 2018-05-15 16:34:21
 */
 .cart-wrap{
     margin-top: 20px;
 }
+/* header */
 .cart-header{
     height: 40px;
     width: 100%;
@@ -115,6 +116,7 @@
 .deleteCartProduct,.delete-selected{
     cursor: pointer;
 }
+/* footer */
 .cart-footer{
     width: 100%;
     background: #eee;

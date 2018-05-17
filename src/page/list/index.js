@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-05-02 14:14:57
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-04 22:09:17
+* @Last Modified time: 2018-05-15 17:12:40
 */
 require('./index.css');
 require('page/common/nav/index.js');
@@ -11,8 +11,8 @@ var _mm             = require('util/mm.js');
 var _product        = require('service/product-service.js');
 var Pagination      = require('util/pagination/index.js');
 var templateIndex   = require('./index.string');
-
 var page = {
+    //初始化数据
     data : {
         listParam : {
             keyword         : _mm.getUrlParam('keyword')    || '',
@@ -22,13 +22,16 @@ var page = {
             pageSize        : _mm.getUrlParam('pageSize')   || 20
         }
     },
+    // 初始化页面
     init : function(){
         this.onLoad();
         this.bindEvent();
     },
+    //加载页面
     onLoad : function(){
         this.loadList();
     },
+    //绑定事件
     bindEvent : function(){
         var _this = this;
         // 排序的点击事件

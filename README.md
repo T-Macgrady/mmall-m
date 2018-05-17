@@ -1,2 +1,2 @@
-# mmall-m
-用户端
+# Tmacmall
+用户端 个人学习电商网站demo

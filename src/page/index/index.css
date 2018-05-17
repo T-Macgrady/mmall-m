@@ -2,8 +2,9 @@
 * @Author: Lizh
 * @Date:   2018-04-07 03:44:01
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-27 17:29:05
+* @Last Modified time: 2018-05-15 17:05:45
 */
+/* keywords列表 */
 .keywords-list{
 	float: left;
     width: 240px;
@@ -27,7 +28,7 @@
 .keywords-list .keywords-item .link:hover{
 	color: #c60023;
 }
-/*banner*/
+/* banner部分 */
 .banner-con{
 	position: relative;
 	float: left;
@@ -44,7 +45,7 @@
 	height: 370px;
 	width: 100%;
 }
-/*导航箭头*/
+/* 前一张和后一张按钮 -banner部分*/
 .banner-con .banner-arrow{
 	position: absolute; 
     top:160px;
@@ -67,7 +68,7 @@
 .banner-con .banner-arrow.next{
 	right: 0;
 }
-/*floor部分*/
+/*商品分类floor部分*/
 .floor-wrap .floor-title{
 	height: 50px;
     line-height: 50px;
@@ -77,7 +78,7 @@
     font-size: 20px;
     border-bottom: 1px solid #d58717;
 }
-/* 更改各楼层标题颜色 */
+/* 更改各楼层标题颜色-floor部分*/
 .floor-wrap:nth-child(2) .floor-title{
     color: #3b838c;
     border-bottom: 1px solid #3b838c;
@@ -94,6 +95,7 @@
     color: #642663;
     border-bottom: 1px solid #642663;
 }
+/*商品列表-floor部分*/
 .floor-wrap .floor-list{
 	overflow: hidden;
 	margin-right: -20px;

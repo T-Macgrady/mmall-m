@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-06 18:53:01
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-26 02:19:00
+* @Last Modified time: 2018-05-15 17:48:18
 *
 */ 
 require('./index.css');
@@ -15,10 +15,12 @@ var templateIndex   = require('./index.string');
 
 // page 逻辑部分
 var page = {
+    // 初始化页面
     init: function(){
         this.onLoad();
         this.bindEvent();
     },
+    // 加载页面
     onLoad : function(){
         // 初始化左侧菜单
         navSide.init({

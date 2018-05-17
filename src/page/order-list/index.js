@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-05-13 16:00:22
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-14 03:27:58
+* @Last Modified time: 2018-05-16 00:10:33
 */
 require('./index.css');
 require('page/common/nav/index.js');
@@ -14,19 +14,22 @@ var templateIndex   = require('./index.string');
 var Pagination      = require('util/pagination/index.js');
 // page 逻辑部分
 var page = {
+    // 初始化数据
 	data : {
         listParam : {
             keyword         : '',
             categoryId      : '',
             orderBy         : 'default',
             pageNum         : 1,
-            pageSize        : 2
+            pageSize        : 10
         }
     },
+    // 初始化页面
 	init : function(){
 		this.onload();
 		this.bindEvent();
 	},
+    // 加载页面
 	onload : function(){
 		var _this = this;
 		navSide.init({
@@ -62,6 +65,7 @@ var page = {
             }
         }));
     },
+    // 绑定事件
 	bindEvent : function(){
 		$(document).on('click','.order-toDetail',function(){
 			var orderNo = $.trim($(this).siblings('.order-num').text());

@@ -2,7 +2,7 @@
 * @Auth or: Lizh
 * @Date:   2018-04-06 18:53:01
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-26 02:28:38
+* @Last Modified time: 2018-05-15 17:33:43
 *
 */ 
 require('./index.css');
@@ -14,16 +14,19 @@ var _user           = require('service/user-service.js');
 
 // page 逻辑部分
 var page = {
+    // 初始化页面
     init: function(){
         this.onLoad();
         this.bindEvent();
     },
+    // 加载页面
     onLoad : function(){
         // 初始化左侧菜单
         navSide.init({
             name: 'user-pass-update'
         });
     },
+    // 绑定事件
     bindEvent : function(){
         var _this = this;
         // 点击提交按钮后的动作

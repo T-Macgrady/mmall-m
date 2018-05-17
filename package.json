@@ -4,9 +4,8 @@
   "description": "用户端",
   "main": "index.js",
   "scripts": {
-    "dev": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
-    "p": "set WEBPACK_ENV=online&&webpack -p",
-    "server": "webpack-dev-server"
+    "dev": "set WEBPACK_ENV=development&& webpack-dev-server",
+    "dist": "set WEBPACK_ENV=production&& webpack -p"
   },
   "repository": {
     "type": "git",

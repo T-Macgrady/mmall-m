@@ -2,14 +2,14 @@
 * @Author: Lizh
 * @Date:   2018-05-02 14:14:57
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-11 11:00:52
+* @Last Modified time: 2018-05-15 16:33:03
 */
 require('./index.css');
 require('page/common/header/index.js');
-var nav             = require('page/common/nav/index.js');
-var _mm             = require('util/mm.js');
+var nav              = require('page/common/nav/index.js');
+var _mm              = require('util/mm.js');
 var templateIndex    = require('./index.string');
-var _cart           = require('service/cart-service.js');
+var _cart            = require('service/cart-service.js');
 var page = {
     data : {
                   

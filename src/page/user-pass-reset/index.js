@@ -1,16 +1,15 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-23 11:50:32
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-23 15:55:48
-*/
 
+/*
+* @Author: Lizh
+* @Date:   2018-05-23 11:50:32
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-05-15 17:33:02
+*/
 'use strict';
 require('./index.css');
 require('page/common/nav-simple/index.js');
 var _user   = require('service/user-service.js');
 var _mm     = require('util/mm.js');
-
 // 表单里的错误提示
 var formError = {
     show : function(errMsg){
@@ -20,7 +19,6 @@ var formError = {
         $('.error-item').hide().find('.err-msg').text('');
     }
 };
-
 // page 逻辑部分
 var page = {
     data : {
@@ -29,13 +27,16 @@ var page = {
         answer      : '',
         token       : ''
     },
+    // 初始化页面
     init: function(){
         this.onLoad();
         this.bindEvent();
     },
+    // 架子啊页面
     onLoad : function(){
         this.loadStepUsername();
     },
+    // 绑定事件
     bindEvent : function(){
         var _this = this;
         // 输入用户名后下一步按钮的点击

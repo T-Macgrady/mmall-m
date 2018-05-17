@@ -2,22 +2,25 @@
 * @Author: Lizh
 * @Date:   2018-04-17 16:44:10
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-11 23:33:34
+* @Last Modified time: 2018-05-15 16:37:51
 */
 require('./index.css');
 var _mm = require ('util/mm.js');
 // 通用页面头部
 var header = {
+	//页面初始化
 	init : function(){
 		this.bindEvent();
 		this.onLoad();
 	},
+	//页面加载
 	onLoad : function(){
 		var keyword = _mm.getUrlParam('keyword');
 		if (keyword) {
 			$('#search-input').val(keyword);
 		}
 	},
+	//事件绑定
 	bindEvent : function(){
 		var _this = this;
 		$('#search-btn').click(function(){
@@ -30,6 +33,7 @@ var header = {
 			}
 		});
 	},
+	//搜索按钮事件
 	searchSubmit : function(){
 		var keyword = $.trim($('#search-input').val());
 		if (keyword){

@@ -16,8 +16,7 @@
 				<span class="order-num link"> {{orderNo}}</span>
 						<span class="order-time">{{createTime}}</span>
 						收件人：
-						<span class="order-name">{{receiverName}}</span>
-						订单状态：
+						<span class="order-name">{{shippingVo.receiverName}}</span>
 						<span class="order-state">{{statusDesc}}</span>
 						订单总价： 
 						<span class="order-orderPrice">￥{{payment}}</span>
@@ -40,6 +39,12 @@
 		</tr>
             {{/orderItemVoList}}
 	</table>
+      {{/list}}   
+      {{^list}}   
+      	<p class="err-tip">
+		    <span>您目前还没有订单，</span>
+		    <a href="./index.html">立即去购物</a>
+		</p>
       {{/list}}   
 </div>
                 

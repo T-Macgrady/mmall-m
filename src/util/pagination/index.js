@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-05-02 17:06:47
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-04 22:09:46
+* @Last Modified time: 2018-05-15 17:39:25
 */
 require('./index.css');
 var _mm                 = require('util/mm.js');
@@ -10,6 +10,7 @@ var templatePagination  = require('./index.string');
 
 var Pagination = function(){
     var _this = this;
+    // 初始化数据
     this.defaultOption = {
         container       : null,
         pageNum         : 1,

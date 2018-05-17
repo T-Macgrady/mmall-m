@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-05-11 14:14:57
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-13 15:25:18
+* @Last Modified time: 2018-05-16 18:28:57
 */
 require('./index.css');
 require('page/common/header/index.js');
@@ -17,14 +17,17 @@ var page = {
     data : {
 
     },
+    //页面初始化
     init : function(){
         this.onLoad();
         this.bindEvent();
     },
+    //加载页面
     onLoad : function(){
         this.loadAddress();
         this.loadOrderProduct();
     },
+    // 绑定事件
     bindEvent : function(){
         var _this = this;
         // 选择收货地址并缓存
@@ -44,15 +47,15 @@ var page = {
         // 提交订单按钮
         $(document).on('click', '.order-submit', function(){
             var $this       = $(this),
-                shiippingId = _this.data.selectedShippingId;
-            if(!shiippingId){
+                shippingId = _this.data.selectedShippingId;
+            if(!shippingId){
                 _mm.errorTips('您尚未选择收货地址，请选择！');
             }
             else{      
                 _order.creatOrder({
-                    shiippingId : shiippingId
+                    shippingId : shippingId
                 }, function(res){
-                    window.location.href = './payment.html?orderNumber=' + res.orderNo;
+                    window.location.href = './payment.html?orderNo=' + res.orderNo;
                 }, function(errMsg){
                     _mm.errorTips(errMsg);
                 });

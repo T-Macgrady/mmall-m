@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-17 11:57:49
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-09 19:20:08
+* @Last Modified time: 2018-05-15 16:38:42
 */
 require('./index.css');
 var _mm     = require('util/mm.js');
@@ -10,12 +10,14 @@ var _user   = require('service/user-service.js');
 var _cart   = require('service/cart-service.js');
 // 导航
 var nav = {
+    //初始化
     init : function(){
         this.loadUserInfo();
         this.loadCartCount();
         this.bindEvent();       
         return this;
     },
+    //绑定事件
     bindEvent : function(){
         // 登录点击事件
         $('.js-login').click(function(){

@@ -2,7 +2,7 @@
 * @Author:   Lizh
 * @Date:   2018-04-06 18:53:01
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-27 17:49:10
+* @Last Modified time: 2018-05-15 17:11:17
 *
 */ 
 require('./index.css');
@@ -29,8 +29,6 @@ $(function() {
     $('.banner-con .banner-arrow').click(function() {
         // var fn = this.className.split(' ')[1];
         var forward = $(this).hasClass('prev') ? 'prev' : 'next';
-
-        //  Either do unslider.data('unslider').next() or .prev() depending on the className
         $slider.data('unslider')[forward]();
     });
 });

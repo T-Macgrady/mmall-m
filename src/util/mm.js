@@ -2,13 +2,12 @@
 * @Author: Lizh
 * @Date:   2018-04-09 13:09:41
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-24 14:22:35
+* @Last Modified time: 2018-05-16 23:04:43
 */
 
 var config = {
     serverHost:''
 };
-// var Hogan = require('hogan.js');
 var _mm = {
     // 网络请求
     request : function(param){
@@ -22,22 +21,18 @@ var _mm = {
             success  : function(res){
                 //登陆成功
                 if( 0 === res.status){
-                    console.log('_mm'+JSON.stringify(res));
                     typeof param.success === 'function' && param.success(res.data , res.msg );
                 }
                 //无登陆状态需请求登陆
-                else if (10 === res.status){
-                    console.log('_mm'+JSON.stringify(res));               
+                else if (10 === res.status){               
                     _this.doLogin();
                 }
                 // 请求数据错误
                 else if (1 === res.status) {
-                    console.log('_mm'+JSON.stringify(res));
                     typeof param.error === 'function' && param.error( res.msg );
                 } 
             },
             error    : function(err){
-                    console.log('_mm'+JSON.stringify(err));
                     typeof param.error === 'function' && param.error( err.statusText );
                 }
         });
@@ -48,8 +43,8 @@ var _mm = {
     },
     //请求url参数
     getUrlParam : function(name) {
-        var reg       = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
-        var result    = window.location.search.substr(1).match(reg);
+        var reg         = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
+        var result      = window.location.search.substr(1).match(reg);
         return result ? decodeURIComponent(result[2]) : null;
     },
     //渲染html模板

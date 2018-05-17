@@ -2,11 +2,13 @@
 * @Author: Lizh
 * @Date:   2018-04-07 17:31:52
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-24 22:12:35
+* @Last Modified time: 2018-05-15 17:34:35
 */
+/* 最外层容器 */
 .user-wrap{
 	background: #e72955;
 }
+/* 表单框 */
 .user-con{
 	width: 400px;
 	background:#FFFFFF;
@@ -24,6 +26,7 @@
 .user-con .user-box{
 	padding: 20px;
 }
+/* 错误提示框 */
 .user-con .user-box .err-item{
     padding: 4px 0 4px 50px;
 	border: 1px solid red;
@@ -33,6 +36,7 @@
 	background-color: #fde9e9; 
 	display: none;
 }
+/* 错误图标 */
 .user-con .user-box .err-icon{
 	position: absolute;
 	font-size: 14px;
@@ -75,6 +79,7 @@
 	font-size: 20px;
 	padding: 2px 0;
 	}
+/* 跳转链接 */
 .user-con .link-item .link{
 	padding-left: 5px;
 	color: #666;

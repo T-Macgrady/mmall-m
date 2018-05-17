@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-17 23:04:40
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-18 15:08:50
+* @Last Modified time: 2018-05-15 16:40:27
 */
 
 require('./index.css');
@@ -10,13 +10,14 @@ var _mm             = require('util/mm.js');
 var templateIndex   = require('./index.string');
 // 侧边导航
 var navSide = {
+    //选项设置
     option : {
         name : '',
         navList : [
             {name : 'user-center', desc : '个人中心', href: './user-center.html'},
             {name : 'order-list', desc : '我的订单', href: './order-list.html'},
             {name : 'user-pass-update', desc : '修改密码', href: './user-pass-update.html'},
-            {name : 'about', desc : '关于MMall', href: './about.html'}
+            {name : 'about', desc : '关于Tmacmall', href: './about.html'}
         ]
     },
     init : function(option){
@@ -31,7 +32,7 @@ var navSide = {
             if(this.option.navList[i].name === this.option.name){
                 this.option.navList[i].isActive = true;
             }
-        }; 
+        }
         var navHtml = _mm.renderHtml(templateIndex, {
             navList : this.option.navList
         });

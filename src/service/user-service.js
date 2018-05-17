@@ -1,8 +1,8 @@
 /*
-* @Author: Rosen
-* @Date:   2017-05-17 17:04:32
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-24 17:11:19
+* @Author:  Lizh
+* @Date:   2018-04-07 01:09:55
+* @Last Modified by:   Lizh
+* @Last Modified time: 2018-05-15 17:48:08
 */
 
 'use strict';
@@ -122,5 +122,5 @@ var _user = {
             error   : reject
         });
     }
-}
+};
 module.exports = _user;

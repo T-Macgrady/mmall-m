@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-07 01:09:55
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-24 23:19:14
+* @Last Modified time: 2018-05-15 17:36:04
 */
 
 require('./index.css');
@@ -21,9 +21,11 @@ var formError = {
 };
 // page 逻辑部分
 var page = {
+	// 初始化页面
 	init : function(){
 		this.bindEvent();
 	},
+	// 绑定事件
 	bindEvent : function(){
 		var _this = this;
 		//异步验证用户名是否存在
@@ -44,12 +46,14 @@ var page = {
 		$('#submit').click(function(){
 			_this.submit();
 		});
+		// 回车键触发提交
 		$('.user-content').keyup(function(e){
 			if(e.keyCode === 13){
 				_this.submit();
 			}
 		});
 	},
+	// 提交按钮事件
 	submit : function(){
 		//表单数据
 		var formData = {

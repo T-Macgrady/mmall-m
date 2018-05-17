@@ -3,7 +3,6 @@
 	<head>
 	<%= require('html-loader!./layout/html-common.html') %>
 <title><%= htmlWebpackPlugin.options.title%> - TmacMall电商平台</title>
-	<meta charset="utf-8">
 	</head>
 	<body>
 		<%= require('html-loader!./layout/nav.html') %>
@@ -15,23 +14,17 @@
 				<span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
 			</div>
 		</div>
-		<div class="cart-wrap w">
-            <div class="panel">
-                <h2 class="panel-title">收货地址</h2>
-            <div class="panel-body address-list">
-
-            </div>
-            </div>
-            <div class="panel">
-                <h2 class="panel-title">商品清单</h2>
-                <div class="panel-body order-product">
-
+		<div class="page-wrap w">
+			<%= require('html-loader!./layout/nav-side.html') %>
+			<div class="content with-nav">
+				<div class="panel">
+                    <div class="panel-title">关于Tmacmall</div>
+                    <div class="panel-body">
+                        <p class="about">这是一个电商网站个人学习demo,欢迎交流学习！--by李振华</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="model-wrap">
-            
-        </div>
+			</div>
+		</div>
 	<%= require('html-loader!./layout/footer.html') %>
 	</body>
 </html>
