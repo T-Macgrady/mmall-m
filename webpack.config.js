@@ -2,7 +2,7 @@
 * @Author: Lizh
 * @Date:   2018-04-06 23:59:09
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-17 23:02:03
+* @Last Modified time: 2018-05-19 02:23:45
 */
 var HtmlWebpackPlugin   = require('html-webpack-plugin');
 var extractTextPlugin   = require("extract-text-webpack-plugin");
@@ -85,9 +85,6 @@ var config = {
             }
         ]
     },
-    //配置webpack开发服务功能
-    devServer : {
-     },
      //配置文件目录别名
     resolve : {
         alias : {
@@ -100,6 +97,13 @@ var config = {
      },
     //插件，用于生产模版和各项功能
     plugins : [
+        //配置webpack开发服务功能
+        new webpack.LoaderOptionsPlugin({
+            options: {
+              devServer: {
+              }
+            }
+        }),
         // 独立通用模块到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
             name            : 'common',

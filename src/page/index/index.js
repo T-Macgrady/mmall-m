@@ -2,11 +2,10 @@
 * @Author:   Lizh
 * @Date:   2018-04-06 18:53:01
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-15 17:11:17
+* @Last Modified time: 2018-05-18 11:35:36
 *
 */ 
 require('./index.css');
-require('../module.js');
 var _mm = require ('util/mm.js');
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
