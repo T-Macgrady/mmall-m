@@ -2,14 +2,14 @@
 * @Author: Lizh
 * @Date:   2018-04-06 23:59:09
 * @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-19 02:23:45
+* @Last Modified time: 2018-05-20 23:13:49
 */
 var HtmlWebpackPlugin   = require('html-webpack-plugin');
 var extractTextPlugin   = require("extract-text-webpack-plugin");
 var webpack             = require('webpack');
 var path                = require('path');
 // 环境变量配置，development / production
-var WEBPACK_ENV         = process.env.WEBPACK_ENV; 
+var WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev'; 
 // 获取html-webpack-plugin参数的方法 
 var getHtmlConfig       = function(name , title){
 return {
@@ -68,7 +68,7 @@ var config = {
                 test :/\.(png|jpg|gif|woff|svg|eot|ttf)\??.*$/,
                 use  : [
                     {
-                        loader :'url-loader?limit=8&name=resource/[hash:4096].[name].[ext]'
+                        loader :'url-loader?limit=2000&name=resource/[hash:4096].[name].[ext]'
                     }
                 ]
             },{ 
