@@ -4,10 +4,17 @@
   "description": "用户端",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "dev": "WEBPACK_ENV=development webpack-dev-server",
     "dev_win": "set WEBPACK_ENV=development&& webpack-dev-server",
     "dist": "WEBPACK_ENV=production webpack -p",
     "dist_win": "set WEBPACK_ENV=production&& webpack -p"
+=======
+    "dev": "./node_modules/.bin/webpack-dev-server",
+    "dev_win": "./node_modules/.bin/webpack-dev-server",
+    "dist": "WEBPACK_ENV=online ./node_modules/.bin/webpack -p",
+    "dist_win": "set WEBPACK_ENV=online&& ./node_modules/.bin/webpack -p"
+>>>>>>> 99bc0b08cdea696e4c7fa0d5a3177100c84becee
   },
   "repository": {
     "type": "git",
@@ -17,22 +24,15 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "html-withimg-loader": "^0.1.16",
-    "raw-loader": "^0.5.1",
+    "html-webpack-plugin": "^3.1.0",
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
-    "webpack": "^3.6.0",
-    "webpack-cli": "^2.0.14",
-    "webpack-dev-server": "^2.9.1"
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
   },
-  "dependencies": {
-    "font-awesome": "^4.7.0",
-    "font-awesome-webpack": "0.0.5-beta.2",
-    "hogan": "^1.0.2",
-    "hogan.js": "^3.0.2"
-  }
+  "dependencies": {}
 }

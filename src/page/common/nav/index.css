@@ -1,9 +1,38 @@
 /*
 * @Author: Lizh
 * @Date:   2018-04-17 11:58:11
-* @Last Modified by:   Lizh
-* @Last Modified time: 2018-04-17 14:08:44
+* @Last Modified by:   15156
+* @Last Modified time: 2018-05-31 09:54:45
 */
+
+.notice-con {
+    background: #c60023;
+    padding: 5px 0;
+    line-height: 30px
+}
+
+.notice-con .notice {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center
+}
+
+.notice-con .notice.add{
+    color: #b5ff04;
+}
+
+.notice-con .notice .notice-link {
+    color: #fff;
+    padding: 5px 5px 5px 10px;
+    text-decoration: none;
+    background: #2705fb96;
+    margin-right: 10px;
+}
+
+.notice-con .notice .notice-link:hover {
+    background: #2705fbf5
+}
 .nav{
 	height: 30px;
 	line-height: 30px;
