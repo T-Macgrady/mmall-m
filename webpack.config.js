@@ -2,7 +2,7 @@
  * @Author: Lizh
  * @Date:   2018-04-06 23:59:09
  * @Last Modified by:   15156
- * @Last Modified time: 2018-05-31 11:52:52
+ * @Last Modified time: 2018-05-31 14:44:04
  */
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var extractTextPlugin = require("extract-text-webpack-plugin");
@@ -52,7 +52,7 @@ var config = {
         //输出的文件名称   【改动】：删除path的配置，在webpack4中文件默认生成的位置就是/dist
         filename: 'js/[name].js',
         //path: path.resolve(__dirname, "dist"),
-        publicPath: WEBPACK_ENV === 'dev' ? "/dist/" : "//47.106.183.192/tmacmall/dist/",
+        publicPath: WEBPACK_ENV === 'dev' ? "/dist/" : "//47.106.183.192/mmall-m/dist/",
     },
     externals: {
         'jquery': 'window.jQuery'
