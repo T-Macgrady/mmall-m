@@ -1,23 +1,12 @@
 /*
-<<<<<<< HEAD
-* @Author:   Lizh
-* @Date:   2018-04-06 18:53:01
-* @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-18 11:35:36
-*
-*/ 
-require('./index.css');
-var _mm = require ('util/mm.js');
-=======
  * @Author:   Lizh
  * @Date:   2018-04-06 18:53:01
  * @Last Modified by:   15156
- * @Last Modified time: 2018-05-31 08:38:51
+ * @Last Modified time: 2018-05-31 11:38:45
  *
  */
 require('./index.css');
 var _mm = require('util/mm.js');
->>>>>>> 99bc0b08cdea696e4c7fa0d5a3177100c84becee
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
 require('util/slider/index.js');

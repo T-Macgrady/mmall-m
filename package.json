@@ -4,17 +4,10 @@
   "description": "用户端",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "dev": "WEBPACK_ENV=development webpack-dev-server",
-    "dev_win": "set WEBPACK_ENV=development&& webpack-dev-server",
-    "dist": "WEBPACK_ENV=production webpack -p",
-    "dist_win": "set WEBPACK_ENV=production&& webpack -p"
-=======
     "dev": "./node_modules/.bin/webpack-dev-server",
     "dev_win": "./node_modules/.bin/webpack-dev-server",
     "dist": "WEBPACK_ENV=online ./node_modules/.bin/webpack -p",
     "dist_win": "set WEBPACK_ENV=online&& ./node_modules/.bin/webpack -p"
->>>>>>> 99bc0b08cdea696e4c7fa0d5a3177100c84becee
   },
   "repository": {
     "type": "git",

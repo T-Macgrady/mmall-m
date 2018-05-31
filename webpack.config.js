@@ -1,21 +1,8 @@
 /*
-<<<<<<< HEAD
-* @Author: Lizh
-* @Date:   2018-04-06 23:59:09
-* @Last Modified by:   Lizh
-* @Last Modified time: 2018-05-20 23:13:49
-*/
-var HtmlWebpackPlugin   = require('html-webpack-plugin');
-var extractTextPlugin   = require("extract-text-webpack-plugin");
-var webpack             = require('webpack');
-var path                = require('path');
-// 环境变量配置，development / production
-var WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev'; 
-=======
  * @Author: Lizh
  * @Date:   2018-04-06 23:59:09
  * @Last Modified by:   15156
- * @Last Modified time: 2018-05-31 10:51:17
+ * @Last Modified time: 2018-05-31 11:52:52
  */
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var extractTextPlugin = require("extract-text-webpack-plugin");
@@ -23,7 +10,6 @@ var webpack = require('webpack');
 var path = require('path');
 // 环境变量配置，development / production
 var WEBPACK_ENV = process.env.WEBPACK_ENV || "dev";
->>>>>>> 99bc0b08cdea696e4c7fa0d5a3177100c84becee
 // 获取html-webpack-plugin参数的方法 
 var getHtmlConfig = function(name, title) {
     return {
@@ -66,51 +52,8 @@ var config = {
         //输出的文件名称   【改动】：删除path的配置，在webpack4中文件默认生成的位置就是/dist
         filename: 'js/[name].js',
         //path: path.resolve(__dirname, "dist"),
-        publicPath: WEBPACK_ENV === 'dev' ? "/dist/" : "//47.106.183.192/tmall-fe/dist/",
+        publicPath: WEBPACK_ENV === 'dev' ? "/dist/" : "//47.106.183.192/tmacmall/dist/",
     },
-<<<<<<< HEAD
-    externals : {
-        'jquery'            : 'window.jQuery'
-},
-    //模块：例如解读CSS,图片如何转换，压缩
-    module : {
-        rules : [
-            {
-                test : /\.css$/,
-                use  : extractTextPlugin.extract({
-                    fallback  : "style-loader",
-                    use       : "css-loader"
-                })
-            },{
-                test :/\.(png|jpg|gif|woff|svg|eot|ttf)\??.*$/,
-                use  : [
-                    {
-                        loader :'url-loader?limit=2000&name=resource/[hash:4096].[name].[ext]'
-                    }
-                ]
-            },{ 
-                test : /\.string$/, 
-                use  : [
-                    {
-                        loader : 'html-loader',
-                        query  : {
-                            minimize              : true,
-                            removeAttributeQuotes : false
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-     //配置文件目录别名
-    resolve : {
-        alias : {
-            node_modules    :  __dirname + '/node_modules',
-            util            :  __dirname + '/src/util',
-            page            :  __dirname + '/src/page',            
-            service         :  __dirname + '/src/service',
-            image           :  __dirname + '/src/image'     
-=======
     externals: {
         'jquery': 'window.jQuery'
     },
@@ -174,7 +117,6 @@ var config = {
             page: __dirname + '/src/page',
             service: __dirname + '/src/service',
             image: __dirname + '/src/image'
->>>>>>> 99bc0b08cdea696e4c7fa0d5a3177100c84becee
         }
     },
     //【新增】：webpack4里面移除了commonChunksPulgin插件，放在了config.optimization里面
@@ -191,23 +133,7 @@ var config = {
         }
     },
     //插件，用于生产模版和各项功能
-<<<<<<< HEAD
-    plugins : [
-        //配置webpack开发服务功能
-        new webpack.LoaderOptionsPlugin({
-            options: {
-              devServer: {
-              }
-            }
-        }),
-        // 独立通用模块到js/base.js
-        new webpack.optimize.CommonsChunkPlugin({
-            name            : 'common',
-            filename        : 'js/base.js'
-        }),      
-=======
     plugins: [
->>>>>>> 99bc0b08cdea696e4c7fa0d5a3177100c84becee
         // 把css单独打包到文件里 
         new extractTextPlugin("css/[name].css"),
         // html模板的处理
