@@ -1,7 +1,8 @@
-## 从零开始打造一个企业级电商平台
+# 从零开始打造一个企业级电商平台
 
-### 项目说明：
-- 项目来源于慕课，包括用户端和后台管理系统，前者可了解电商网站从设计到上线整个流程，拥抱原生开发；后者采用React16 + React-Router4结合yarn、webpack、ES6和Sass、Bootstrap等技术，体验前开发端新技术。
+## 项目说明：
+
+- 项目来源于慕课，包括用户端和后台管理系统，前者可了解电商网站从设计到上线整个流程；后者采用React16 + React-Router4结合yarn、webpack、ES6和Sass、Bootstrap等技术，体验前开发端新技术。
 - 对于前端新人，从前到后撸一把还是很有必要的，此项目旨在交流学习，后续会整理项目中笔记及相关知识放在博客上，欢迎交流学习~
 - [后台管理系统项目 >>](https://gitee.com/happymmallmac/admin-fe)
 <a id="demo"></a> 
@@ -9,12 +10,13 @@
 - [前台展示 >>](http://47.106.183.192)
 - [后台管理 >>](http://47.106.183.192:8080)
 
-### 项目运行
+## 项目运行
 
-#### 下载项目
+### 下载项目
+
 ``git clone git@gitee.com:happymmallmac/mmall-m.git``
 
-#### 运行
+### 运行
 
 -  [安装nodejs环境,使用v6.12.3](https://nodejs.org/download/release/v6.12.3/)
 -  [安装包管理工具yarn@1.6.0](https://yarn.bootcss.com/docs/install.html)，yarn比npm好
@@ -28,12 +30,12 @@
 	[接口文档 >>](https://gitee.com/happymmallmac/mmall-m/wikis/Home)
 
 
-### 实战目标
+## 实战目标
 
 - 了解一个电商网站从设计到上线的整个流程
 - 掌握开发过程中遇到各种坑的解决思路和能力
 
-### 需求分析
+## 需求分析
 
 - 需求：用户 购买 后台 统计 运营 市场
 - 核心：用户 购买 
@@ -54,13 +56,13 @@
 ### 前后端完全分离
 
 - 把纯静态的html模板完全放在前端，数据全部通过RESTful接口来进行交互
-###分层架构
+
+### 分层架构
 
 - 逻辑层
 
 ![逻辑层2](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140135&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLkCAZit8AAA2LuOGFko946.PNG%3Ftoken%3D7f7cc1a3089bdc432dec42bab7fa2cf6%26ts%3D1527787108%26attname%3D%25E9%2580%25BB%25E8%25BE%2591%25E5%25B1%25822.PNG)   ![逻辑层1](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140134&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLjaAFg4XAAAiGIfL7qQ421.PNG%3Ftoken%3Db915fe4513625f8e8161d116dd641cd8%26ts%3D1527787166%26attname%3D%25E9%2580%25BB%25E8%25BE%2591%25E5%25B1%25821.PNG)		     	
-- 数据层
-
+- 数据层  
 ![数据层](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140132&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLeyAWVd2AAAZOI3pjWg471.PNG%3Ftoken%3Dd5efed3bfc8dfa8e142e9bf328f57221%26ts%3D1527786988%26attname%3Dservice.PNG)
 - 工具层
 
@@ -69,6 +71,7 @@
   易维护、易复用、易扩展
 
 ### 模块化
+
 - 在分层的基础上利用commonjs进行模块化的拆分，通过组件化的拼装达到业务的实现
 
 ![模块化](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140141&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQMQyAfvy8AACQ02rzb7c424.PNG%3Ftoken%3Db61fd4df8df1b5937c8389697c939026%26ts%3D1527787788%26attname%3D%25E6%25A8%25A1%25E5%259D%2597%25E5%258C%25962.PNG)
@@ -77,14 +80,16 @@
   进一步的解耦
   支持并行开发，提高团队效率
 ###技术选型&工具
-- 框架？
+
+### 框架？
 
 | 项目      |  用户端   |   后台    |
 | :--------: | :--------:| :------: |
 | 特点    |   要求稳定 用户类型多样 兼容性好 有SEO要求 多页应用 |  开发快 企业内部使用 不要求兼容性和SEO 单页应用  |
 |  选型    |   javascript +  jquery + commonjs + hogan |  html5 + css3 + sass + Bootstrap + React16 + React-Router4 + ES6   |
 
-- 构建工具
+### 构建工具
+
   构建工具将源代码转换成可以执行的JavaScript、CSS、HTML 代码，用来让我们不再做机械重复的事情，解放我们的双手的。
 
 | 项目      |  Gulp   |   webpack    |
@@ -93,7 +98,8 @@
 | 缺点   |   集成度不高，要写很多配置后才可以用 | 只能用于采用模块化开发的项目  |
 | 选择   |   × |  √  |
 
-- 版本控制工具
+### 版本控制工具
+
   毫无疑问，非git莫属
 
 - 工具一栏
@@ -104,7 +110,10 @@
 
 >注：更新webpack@4.2.0后webpack-dev-server新增了devServer的配置，用自带的代理就可以访问接口
 
+## 业务部分
+
 ### 通用功能开发
+
 - 为业务开发打下基础，加快开发速度
 ```javascript
 /*
@@ -197,9 +206,13 @@ var _mm = {
 module.exports = _mm;
 ```
 
-### 生产环境适配及基本SEO
+### 业务开发
 
-#### 生产环境适配
+![业务开发](https://gitee.com/happymmallmac/mmall-m/raw/master/src/image/readme/%E5%89%8D%E5%8F%B0-%E4%B8%9A%E5%8A%A1.png)
+
+## 生产环境适配及基本SEO
+
+### 生产环境适配
 -  利用webpack添加favicon
 -  线上域名分离，HTML路径简化
 
@@ -210,7 +223,7 @@ module.exports = _mm;
   - 添加dns-prefecth
   - 对线上打包结果进行回归测试，防止压缩后显示不一致
 	
-### 基本SEO
+## 基本SEO
 - 增加页面数量
 - 减少页面层级
 - 关键词密度
@@ -218,13 +231,14 @@ module.exports = _mm;
 - 分析竞对
 - SEO数据监控
 
-### 项目上线
-#### 上线准备
+## 项目上线
+
+### 上线准备
 - 购买服务器和域名  
  - [阿里云服务器注册免费体验 >>](https://free.aliyun.com/ntms/free/personal.html?handle=true)
  - [获取实例公网IP  登录密码 >>](https://ecs.console.aliyun.com/?spm=5176.2020520001.1011.2.69864bd3mI9irR&accounttraceid=1e26d2e5-35d6-45e6-8733-bb2fc7a75871#/server/i-wz9ewlqw5noo6zk4iyfn/detail?regionId=cn-shenzhen) ，本次项目使用CentOS7
  
-#### 生产环境配置
+### 生产环境配置
   
 1. 使用git bash远程连接服务器
 2. [安装nodejs环境,使用v6.12.3](https://nodejs.org/download/release/v6.12.3/) 
@@ -238,7 +252,7 @@ module.exports = _mm;
 6. 安装nginx  ：
 ``yum install nginx``
 
-#### 发布脚本编写
+### 发布脚本编写
 
 1. 编写发布脚本前先手动执行一次，确保脚本准确
 2. 编写自动发布脚本
@@ -250,23 +264,24 @@ module.exports = _mm;
 6. [查看网站并测试 >>](#demo)
 
 
-### 说明
+## 说明
 
 - 如果对您有帮助，您可以点 "Star" 支持一下 十分感谢!
 
-### 相关链接
+## 相关链接
+
 [本人博客 ](#) 
 [对应后台管理系统](https://gitee.com/happymmallmac/admin-fe)
 
 
-### 项目截图
+## 项目截图
 
-#### 用户端
+### 用户端
 
 ![首页-用户端](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140154&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQoWaAO0C8AAdJupeT9Is594.png%3Ftoken%3D28d5c6c0ad8f9d887f08dc45d28fcf90%26ts%3D1527816623%26attname%3D%25E6%2588%25AA%25E5%259B%25BE-qian1.png)
 ![订单确认-用户端](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140158&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQoZKAO1OGAAEWeHtspx8300.png%3Ftoken%3D6f6ad415e94bac85eecb0b97111ba0c0%26ts%3D1527816623%26attname%3D%25E6%2588%25AA%25E5%259B%25BE-qian5.png)
 
-#### 后台管理系统
+### 后台管理系统
 
 ![首页-后台](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140162&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQosWARAKRAACKFHDSJb4474.png%3Ftoken%3Dea2040802c6a8d1c0eb4c3c91f88c9e3%26ts%3D1527816901%26attname%3D%25E6%2588%25AA%25E5%259B%25BE-hou.png)
 ![商品-后台](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140159&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQoZyAdd0EAAEDDvYcI_Y651.png%3Ftoken%3Decf09e16769abcbeb123b61c83fb9122%26ts%3D1527816623%26attname%3D%25E6%2588%25AA%25E5%259B%25BE-%25E5%2590%258E1.png)
