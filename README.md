@@ -57,16 +57,20 @@
 ###分层架构
 
 - 逻辑层
+
 ![逻辑层2](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140135&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLkCAZit8AAA2LuOGFko946.PNG%3Ftoken%3D7f7cc1a3089bdc432dec42bab7fa2cf6%26ts%3D1527787108%26attname%3D%25E9%2580%25BB%25E8%25BE%2591%25E5%25B1%25822.PNG)   ![逻辑层1](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140134&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLjaAFg4XAAAiGIfL7qQ421.PNG%3Ftoken%3Db915fe4513625f8e8161d116dd641cd8%26ts%3D1527787166%26attname%3D%25E9%2580%25BB%25E8%25BE%2591%25E5%25B1%25821.PNG)		     	
 - 数据层
+
 ![数据层](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140132&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLeyAWVd2AAAZOI3pjWg471.PNG%3Ftoken%3Dd5efed3bfc8dfa8e142e9bf328f57221%26ts%3D1527786988%26attname%3Dservice.PNG)
 - 工具层
+
 ![ 工具层](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140133&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLiiAB42gAAAN0ttrC1c429.PNG%3Ftoken%3Df6f7d34d8b649b29bfdc68b40a0bf246%26ts%3D1527787166%26attname%3D%25E5%25B7%25A5%25E5%2585%25B7%25E5%25B1%2582.PNG)
 - 优点：
   易维护、易复用、易扩展
 
 ### 模块化
 - 在分层的基础上利用commonjs进行模块化的拆分，通过组件化的拼装达到业务的实现
+
 ![模块化](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140141&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQMQyAfvy8AACQ02rzb7c424.PNG%3Ftoken%3Db61fd4df8df1b5937c8389697c939026%26ts%3D1527787788%26attname%3D%25E6%25A8%25A1%25E5%259D%2597%25E5%258C%25962.PNG)
 ![模块化](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140140&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQMQSASlgHAABWHVxDnP8494.PNG%3Ftoken%3Dc485d7fb1f182a846d31a607531f204b%26ts%3D1527787788%26attname%3D%25E6%25A8%25A1%25E5%259D%2597%25E5%258C%2596.PNG)
 - 优点： 
@@ -75,7 +79,7 @@
 ###技术选型&工具
 - 框架？
 
-| item      |  用户端   |   后台    |
+| 项目      |  用户端   |   后台    |
 | :--------: | :--------:| :------: |
 | 特点    |   要求稳定 用户类型多样 兼容性好 有SEO要求 多页应用 |  开发快 企业内部使用 不要求兼容性和SEO 单页应用  |
 |  选型    |   javascript +  jquery + commonjs + hogan |  html5 + css3 + sass + Bootstrap + React16 + React-Router4 + ES6   |
@@ -83,7 +87,7 @@
 - 构建工具
   构建工具将源代码转换成可以执行的JavaScript、CSS、HTML 代码，用来让我们不再做机械重复的事情，解放我们的双手的。
 
-| item      |  Gulp   |   webpack    |
+| 项目      |  Gulp   |   webpack    |
 | :--------: | :--------:| :------: |
 | 优点   |   好用又不失灵活,既可以单独完成构建，也可以和其他工具搭配使用 | *天生支持CommonJS,专注于处理模块化的项目，完整好用又不失灵活性；*  |
 | 缺点   |   集成度不高，要写很多配置后才可以用 | 只能用于采用模块化开发的项目  |
@@ -239,16 +243,11 @@ module.exports = _mm;
 1. 编写发布脚本前先手动执行一次，确保脚本准确
 2. 编写自动发布脚本
 ####nginx和域名配置（这次没有进行域名分离）
+3. 新建vhost/*.conf并将其引入nginx.conf主文件
+4. nginx配置域名
+5. [域名解析 >>](https://dns.console.aliyun.com/#/dns/domainList)
 
-1. 新建vhost/*.conf并将其引入nginx.conf主文件
-2. nginx配置域名
-3. [域名解析 >>](https://dns.console.aliyun.com/#/dns/domainList)
-
-4. [查看网站并测试 >>](#demo)
-5. 本地分支修复bug重新发布流程
-- github提交Pull request,审查合并
-- 执行自动发布脚本
-- 设置alias
+6. [查看网站并测试 >>](#demo)
 
 
 ### 说明
