@@ -60,7 +60,7 @@
 ### 分层架构
 
 - 逻辑层
-
+https://github.com/用户名/repository仓库名/raw/分支名master/图片文件夹名称/***.png or***.jpg
 ![逻辑层2](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140135&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLkCAZit8AAA2LuOGFko946.PNG%3Ftoken%3D7f7cc1a3089bdc432dec42bab7fa2cf6%26ts%3D1527787108%26attname%3D%25E9%2580%25BB%25E8%25BE%2591%25E5%25B1%25822.PNG)   ![逻辑层1](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140134&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLjaAFg4XAAAiGIfL7qQ421.PNG%3Ftoken%3Db915fe4513625f8e8161d116dd641cd8%26ts%3D1527787166%26attname%3D%25E9%2580%25BB%25E8%25BE%2591%25E5%25B1%25821.PNG)		     	
 - 数据层  
 ![数据层](https://gitee.com/happymmallmac/admin-fe/attach_files/download?i=140132&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F03%2FCE%2FPaAvDFsQLeyAWVd2AAAZOI3pjWg471.PNG%3Ftoken%3Dd5efed3bfc8dfa8e142e9bf328f57221%26ts%3D1527786988%26attname%3Dservice.PNG)
