@@ -1,11 +1,12 @@
 /*
  * @Author: Lizh
  * @Date:   2018-04-06 23:59:09
- * @Last Modified by:   15156
- * @Last Modified time: 2018-05-31 14:44:04
+ * @Last Modified by:   Lizhhmac
+ * @Last Modified time: 2018-08-10 20:31:45
  */
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var extractTextPlugin = require("extract-text-webpack-plugin");
+var CompressionWebpackPlugin = require("compression-webpack-plugin");
 var webpack = require('webpack');
 var path = require('path');
 // 环境变量配置，development / production
@@ -155,4 +156,16 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('about', '关于TMacmall')),
     ]
 };
+//生产环境开启gzip
+if ( WEBPACK_ENV !== 'dev' ) {
+    config.plugins.push(
+        new CompressionWebpackPlugin({
+            asset: '[path].gz[query]',
+            algorithm: 'gzip',
+            test: /\.(js|css|html)$/,
+            threshold: 1024,
+            minRatio: 0.8
+        })
+    )
+}
 module.exports = config;

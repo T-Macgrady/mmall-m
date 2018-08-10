@@ -16,6 +16,7 @@
   "author": "lizhh <15156692746@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "^1.1.11",
